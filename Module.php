@@ -1,9 +1,9 @@
 <?php
 namespace ddmtechdev\auditlog;
 
-use Yii;
+use yii\base\Module as BaseModule;
 
-class Module extends \yii\base\Module
+class Module extends BaseModule
 {
     public $controllerNamespace = 'ddmtechdev\auditlog\controllers';
 
