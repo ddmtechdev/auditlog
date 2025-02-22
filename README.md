@@ -29,8 +29,7 @@
 <pre><code>
 use ddmtechdev\auditlog\behaviors\AuditLogBehavior;
 
-public function behaviors()
-{
+public function behaviors(){
     return [
         AuditLogBehavior::class,
     ];
