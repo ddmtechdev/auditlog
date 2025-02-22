@@ -26,9 +26,9 @@
 
 <h3>4️⃣ Attach the Behavior to Any Model</h3>
 <p>Modify your <code>console/config/main.php</code> file and add the following inside the <code>controllerMap</code> array:</p>
-<pre><code>
+<pre>
 use ddmtechdev\auditlog\behaviors\AuditLogBehavior;
-
+<code>
 public function behaviors(){
     return [
         AuditLogBehavior::class,
