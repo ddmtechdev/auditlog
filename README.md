@@ -25,7 +25,7 @@
 </code></pre>
 
 <h3>4️⃣ Attach the Behavior to Any Model</h3>
-<p>Modify your <code>console/config/main.php</code> file and add the following inside the <code>controllerMap</code> array:</p>
+<p>In any model where you want automatic logging, add:</p>
 <pre>
 use ddmtechdev\auditlog\behaviors\AuditLogBehavior;
 <code>
