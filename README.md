@@ -1,12 +1,12 @@
-<h1>🔐 RBAC Module Installation Guide</h1>
-<p>Follow this guide to install and configure the <strong>ddmtechdev/rbac</strong> module in your Yii2 application.</p>
+<h1>🔐 AuditLog Module Installation Guide</h1>
+<p>Follow this guide to install and configure the <strong>ddmtechdev/auditlog</strong> module in your Yii2 application.</p>
 
 <hr>
 
 <h2>📌 Installation Steps</h2>
 
 <h3>1️⃣ Install the Package</h3>
-<p>Run the following command to install the RBAC module via Composer:</p>
+<p>Run the following command to install the AuditLog module via Composer:</p>
 <pre><code>php composer require ddmtechdev/auditlog:@dev</code></pre>
 
 <h3>2️⃣ Run Migrations</h3>
@@ -24,7 +24,21 @@
 ],
 </code></pre>
 
-<h3>4️⃣ Attach the Behavior to Any Model</h3>
+<h3>4️⃣ Add Repository to Composer</h3>
+<p>To ensure the correct repository is accessible, open <code>composer.json</code> and add the following inside the <code>"repositories"</code> array:</p>
+<pre><code>
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/ddmtechdev/auditlog.git"
+    }
+    ...
+]
+</code></pre>
+
+<hr>
+
+<h3>5️⃣ Attach the Behavior to Any Model</h3>
 <p>In any model where you want automatic logging, add:</p>
 <pre>
 use ddmtechdev\auditlog\behaviors\AuditLogBehavior;
